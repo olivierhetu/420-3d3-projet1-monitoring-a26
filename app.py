@@ -114,6 +114,8 @@ class App:
             f"RAM: {ram:.1f}% | "
             f"Disque: {disque:.1f}%\n"
         )
+    
+        print(ligne)
         if self.log_actif:
             with open("monitoring.log", 'a') as f:
                 f.write(ligne)
